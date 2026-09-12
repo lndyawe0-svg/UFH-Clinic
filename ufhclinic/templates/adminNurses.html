@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Nurses{% endblock %}{% block content %}<div class="card"><h1>Clinic Nurses</h1><table class="table"><tr><th>ID</th><th>Name</th><th>Email</th><th>Created</th></tr>{% for n in nurses %}<tr><td>{{n['id']}}</td><td>{{n['full_name']}}</td><td>{{n['email']}}</td><td>{{n['created_at']}}</td></tr>{% endfor %}</table></div>{% endblock %}
